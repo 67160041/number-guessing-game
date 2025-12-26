@@ -93,3 +93,13 @@ function resetGame() {
   document.getElementById("guessInput").focus();
 }
 // ...existing code...
+
+// filepath: script.js
+// ...existing code...
+// เพิ่มการ select text เมื่อคลิก input
+document.addEventListener("DOMContentLoaded", function () {
+  const guessInput = document;
+  guessInput.addEventListener("focus", function () {
+    this.select();
+  });
+});
